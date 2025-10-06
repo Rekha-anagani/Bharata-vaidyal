@@ -19,7 +19,11 @@ import {
 } from '@mui/icons-material';
 import { useNavigate } from 'react-router-dom';
 import { Style } from './Style';
-import logo from '../../src/logo.jpg'
+import logo from '../../src/logo.jpg';
+import Bharata from '../../src/imageGallarey/bharatav.png';
+import cnr from '../../src/imageGallarey/cnr.png';
+import innohub from '../../src/imageGallarey/innohub.png';
+import surya from '../../src/imageGallarey/surya.png';
 const Dashbord = () => {
   const navigate = useNavigate();
 
@@ -36,31 +40,31 @@ const Dashbord = () => {
     },
     {
       id: 'neet',
-      title: 'NEET PG Course',
+      title: 'Surya International Tradings',
       description: 'National Eligibility cum Entrance Test for Post Graduate',
-      image: logo,
+      image: surya,
       icon: <School />,
-      color: '#2e7d32',
+      // color: '#2e7d32',
       route: '/neet',
       features: ['Live Classes', 'Test Series', '90% Success Rate', '8000+ Students']
     },
     {
       id: 'engineering',
-      title: 'Engineering Courses',
+      title: 'Bharata Vaidyalai',
       description: 'Advanced Engineering and Technology Programs',
-      image: logo,
+      image:Bharata,
       icon: <Engineering />,
-      color: '#f57c00',
+      // color: '#f57c00',
       route: '/engineering',
       features: ['Drone Technology', 'Robotics', 'AI & ML', 'Electronics']
     },
     {
       id: 'medical-skills',
-      title: 'Medical Skills',
+      title: 'C.N.R Foundation',
       description: 'CPR & Advanced Medical Skills Training',
-      image: logo,
+      image: cnr,
       icon: <Science />,
-      color: '#d32f2f',
+      // color: '#d32f2f',
       route: '/medical-skills',
       features: ['CPR Training', 'Medical Skills', 'Certification', 'Hands-on Practice']
     },
