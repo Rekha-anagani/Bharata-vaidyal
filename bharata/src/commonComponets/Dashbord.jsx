@@ -26,7 +26,7 @@ const Dashbord = () => {
   const dashboardContent = [
     {
       id: 'fmge',
-      title: 'FMGE Course',
+      title: 'InnoHub',
       description: 'Foreign Medical Graduate Examination Preparation',
       image: logo,
       icon: <MedicalServices />,
@@ -38,7 +38,7 @@ const Dashbord = () => {
       id: 'neet',
       title: 'NEET PG Course',
       description: 'National Eligibility cum Entrance Test for Post Graduate',
-  image: logo,
+      image: logo,
       icon: <School />,
       color: '#2e7d32',
       route: '/neet',
@@ -48,7 +48,7 @@ const Dashbord = () => {
       id: 'engineering',
       title: 'Engineering Courses',
       description: 'Advanced Engineering and Technology Programs',
-  image: logo,
+      image: logo,
       icon: <Engineering />,
       color: '#f57c00',
       route: '/engineering',
@@ -58,12 +58,22 @@ const Dashbord = () => {
       id: 'medical-skills',
       title: 'Medical Skills',
       description: 'CPR & Advanced Medical Skills Training',
-  image: logo,
+      image: logo,
       icon: <Science />,
       color: '#d32f2f',
       route: '/medical-skills',
       features: ['CPR Training', 'Medical Skills', 'Certification', 'Hands-on Practice']
-    }
+    },
+    {
+      id: 'normal',
+      title: 'FMGE Course',
+      description: 'Foreign Medical Graduate Examination Preparation',
+      image: logo,
+      icon: <MedicalServices />,
+      color: '#1976d2',
+      route: '/home',
+      features: ['Expert Faculty', 'Video Lectures', 'Mock Tests', '95% Pass Rate']
+    },
   ];
 
   const handleCardClick = (route) => {
@@ -82,20 +92,20 @@ const Dashbord = () => {
           }}
         >
           <Container maxWidth="lg">
-            <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 'bold', mb: 2 }}>
-              Welcome to Bharata Vaidyal
+            <Typography variant="h2" component="h1" gutterBottom sx={{ fontWeight: 'bold', mb: 2, textAlign: "center" }}>
+              Wellcome to<br /> Chintavari Innovations Private Limited
             </Typography>
-            <Typography variant="h5" sx={{ mb: 4, opacity: 0.9 }}>
+            {/* <Typography variant="h5" sx={{ mb: 4, opacity: 0.9 }}>
               Excellence in Medical and Engineering Education
-            </Typography>
-            <Typography variant="body1" sx={{ fontSize: '1.2rem', maxWidth: '600px', mx: 'auto', opacity: 0.8 }}>
+            </Typography> */}
+            {/* <Typography variant="body1" sx={{ fontSize: '1.2rem', maxWidth: '600px', mx: 'auto', opacity: 0.8 }}>
               Choose your path to success with our comprehensive courses designed by industry experts
-            </Typography>
+            </Typography> */}
           </Container>
         </Box>
 
         <Container maxWidth="lg" sx={{ py: 8 }}>
-          <Typography
+          {/* <Typography
             variant="h3"
             component="h2"
             gutterBottom
@@ -106,7 +116,7 @@ const Dashbord = () => {
             }}
           >
             Our Courses
-          </Typography>
+          </Typography> */}
 
           <Grid container spacing={4} sx={{ ...Style.GridLayout }}>
             {dashboardContent.map((course) => (
@@ -182,7 +192,7 @@ const Dashbord = () => {
                     </Box>
 
                     <CardContent sx={{ flexGrow: 1, p: 3 }}>
-                      {/* <Typography
+                      <Typography
                         variant="h5"
                         component="h3"
                         gutterBottom
@@ -195,7 +205,7 @@ const Dashbord = () => {
                         {course.title}
                       </Typography>
 
-                      <Typography
+                      {/* <Typography
                         variant="body1"
                         color="text.secondary"
                         sx={{ mb: 3, lineHeight: 1.6 }}
@@ -225,19 +235,19 @@ const Dashbord = () => {
             ))}
           </Grid>
 
-          <Box sx={{ textAlign: 'center', mt: 8 }}>
+          {/* <Box sx={{ textAlign: 'center', mt: 8 }}>
             <Typography variant="h4" gutterBottom sx={{ color: '#1976d2', fontWeight: 600 }}>
               Ready to Start Your Journey?
             </Typography>
             <Typography variant="h6" color="text.secondary">
               Contact us for more information about our courses and admission process
             </Typography>
-          </Box>
+          </Box> */}
         </Container>
         <Box sx={{ textAlign: "center", mt: 4, mb: 2 }}>
           <hr style={{ width: "80%", margin: "16px auto", border: "1px solid #ddd" }} />
           <Typography sx={{ fontWeight: 600, color: "text.secondary" }}>
-            © 2025 - Bharata Vaidyal
+            © 2025 - Chintavari Innovations Private Limited
           </Typography>
         </Box>
       </Box>
